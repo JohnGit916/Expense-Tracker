@@ -30,6 +30,11 @@ const App = () => {
   );
 
   return (
+    <>
+    <div className="app-header">
+      <h1 className="app-title">Expense Tracker</h1>
+      <p className="app-description">Track your expenses and manage your budget efficiently.</p>
+      </div>
     <div className="container">
       <div className="expense-form">
         <ExpenseForm onAddExpense={handleAddExpense} />
@@ -41,6 +46,11 @@ const App = () => {
         <ExpenseTable expenses={filteredExpenses} onDeleteExpense={handleDeleteExpense} />
       </div>
     </div>
+    <footer className="app-footer">
+    <p>&copy; {new Date().getFullYear()} John Git. All rights reserved.</p>
+  </footer>
+    </>
+    
   );
 };
 

@@ -18,14 +18,35 @@ body {
   box-sizing: border-box;
 }
 
+.app-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.app-description {
+  color: #666;
+  font-size: 1rem;
+  text-align: center;
+}
+
 .expense-form {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 30%;
-  min-width: 260px;
-  box-sizing: border-box;
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
 }
 
 .expense-form h2 {
@@ -34,6 +55,11 @@ body {
   margin-bottom: 1rem;
 }
 
+.form-subtext {
+  font-size: 0.875rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
 .expense-form input {
   width: 100%;
   padding: 0.5rem;
@@ -70,7 +96,7 @@ body {
 
 /* Style the date picker icon */
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1); /* Makes a white icon black */
+  filter: invert(1); 
   cursor: pointer;
 }
 
@@ -85,6 +111,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-sizing: border-box;
   background-color: #f9f9f9; 
   color: #000000; 
+  border: 1px solid #ccc;
 }
 
 
@@ -116,6 +143,15 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
   background-color: #e0e0e0;
 }
+
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #999;
+  font-size: 0.875rem;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

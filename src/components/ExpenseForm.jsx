@@ -30,6 +30,7 @@ const ExpenseForm = ({ onAddExpense }) => {
   return (
     <form onSubmit={handleSubmit} className="bg-white p-4 shadow-md rounded">
       <h2 className="text-xl font-bold mb-4">Add Expense</h2>
+      <p className="form-subtext">Fill in the details below to add a new expense.</p>
       <input name="name" placeholder="Expense name" value={formData.name} onChange={handleChange} className="w-full mb-2 p-2 border" />
       <input name="description" placeholder="Expense description" value={formData.description} onChange={handleChange} className="w-full mb-2 p-2 border" />
       <input name="category" placeholder="Category" value={formData.category} onChange={handleChange} className="w-full mb-2 p-2 border" />
